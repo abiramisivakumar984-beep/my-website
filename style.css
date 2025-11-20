@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    font-family: "Georgia", serif;
+    background: #f3f1e6;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 30px 0;
+    background: #ffffff;
+}
+
+header h1 {
+    font-size: 38px;
+    color: #3e4f3c;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    margin-top: -10px;
+    color: #67677c;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    margin: 0 18px;
+    text-decoration: none;
+    color: #4f4f3c;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* HERO */
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+/* INTRO BOX */
+.intro-box {
+    width: 65%;
+    margin: -40px auto 40px;
+    text-align: center;
+    padding: 30px;
+    background: #ffffff;
+    border: 2px solid #d6d1c0;
+}
+
+.intro-box button {
+    margin-top: 10px;
+    background: #4f4f3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    letter-spacing: 1px;
+}
+
+/* CATEGORY BOXES */
+.categories {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.cat {
+    width: 30%;
+    background: #d0d9c8;
+    padding: 55px 0;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: #4f4f3c;
+}
+
+/* SUBSCRIBE */
+.subscribe {
+    background: #e2c8a7;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.subscribe .form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.subscribe input {
+    padding: 10px;
+    width: 210px;
+    border: none;
+}
+
+.subscribe button {
+    padding: 11px 25px;
+    background: #4f4f3c;
+    color: white;
+    border: none;
+}
+
+/* BLOG SECTION */
+.blog {
+    display: flex;
+    width: 85%;
+    margin: 60px auto;
+    gap: 25px;
+}
+
+.blog.reverse {
+    flex-direction: row-reverse;
+}
+
+.blog img {
+    width: 50%;
+}
+
+.blog-box {
+    background: #e5e4d9;
+    padding: 25px;
+}
+
+.blog-box button {
+    margin-top: 10px;
+    background: #4f4f3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+/* POPULAR POSTS */
+.popular {
+    background: #758269;
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+
+.popular-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.post img {
+    width: 320px;
+    display: block;
+}
+
+.post button {
+    margin-top: 10px;
+    background: #4f4f3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+/* FOOTER */
+footer {
+    background: #e2c8a7;
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer .form {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+footer input {
+    padding: 10px;
+    width: 210px;
+}
+
+footer button {
+    background: #4f4f3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+.social {
+    margin-top: 20px;
+    color: #4f4f3c;
+    letter-spacing: 3px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    .categories {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cat {
+        width: 100%;
+    }
+
+    .blog {
+        flex-direction: column;
+    }
+
+    .blog img {
+        width: 100%;
+    }
+
+    .popular-container {
+        flex-direction: column;
+    }
+
+    footer .form,
+    .subscribe .form {
+        flex-direction: column;
+    }
+
+    footer input,
+    .subscribe input {
+        width: 90%;
+    }
+}
