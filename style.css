@@ -196,14 +196,24 @@ footer button {
 /* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
 
+    /* Parent container */
     .categories {
-        flex-direction: column;
-        gap: 20px;
+        display: flex;          /* Ensure flex layout */
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px;              /* Space between items */
+        align-items: center;    /* Center items horizontally */
+        padding: 10px;          /* Optional: avoid touching screen edges */
     }
 
+    /* Individual category items */
     .cat {
-        width: 100%;
+        width: 100%;            /* Full width of parent */
+        box-sizing: border-box; /* Include padding/border in width */
+        text-align: center;     /* Center text/content */
+        padding: 10px;          /* Optional: make content breathable */
     }
+}
+
 
     .blog {
         flex-direction: column;
